@@ -1,0 +1,104 @@
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background-color: var(--white);
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .form-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-form-add);
+    border-radius: 30px;
+    padding-left: 20px;
+
+    .input-add {
+      flex: 1;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 10px;
+    }
+
+    .btn-add {
+      border: none;
+      outline: none;
+      padding: 16px 50px;
+      background-color: var(--bg-btn);
+      color: var(--white);
+      font-size: 16px;
+      border-radius: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .todo-list {
+    .todo-item {
+      list-style: none;
+      font-size: 20px;
+      padding: 16px 8px;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      user-select: none;
+      cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 5px;
+      background-color: var(--white);
+
+      .todo-display {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .todo-text {
+          display: flex;
+          gap: 16px;
+          flex: 1;
+        }
+
+        .completed {
+          text-decoration: line-through;
+        }
+
+        .btn-wrapper {
+          display: flex;
+          gap: 20px;
+
+          .btn-icon {
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .todo-edit {
+        width: 100%;
+        display: flex;
+        gap: 4px;
+
+        .input-edit {
+          width: 100%;
+          padding: 8px;
+          outline: none;
+        }
+
+        .btn-action {
+          padding: 8px 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
